@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For Us</title>
+  <meta name="description" content="A small corner of the internet to say how much you mean to me." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1220;
+      --card: #171a2b;
+      --text: #e7e8ec;
+      --muted: #a9aec4;
+      --accent: #7c9cff;
+      --accent2: #ff6b9a;
+      --ring: rgba(124,156,255,0.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: radial-gradient(1200px 600px at 50% -200px, #182042 0%, var(--bg) 40%, #0b0e19 100%); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 20px 64px; }
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0 8px;
+    }
+    .title {
+      font-size: 28px; font-weight: 700; letter-spacing: 0.2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .sub { color: var(--muted); font-size: 14px; }
+    .grid {
+      display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 24px;
+    }
+    @media (min-width: 860px) {
+      .grid { grid-template-columns: 1.15fr 0.85fr; }
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      box-shadow: 0 0 0 1px rgba(124,156,255,0.03), 0 12px 40px rgba(0,0,0,0.35);
+      padding: 18px;
+    }
+    .letter {
+      padding: 22px 22px 26px;
+      line-height: 1.65;
+      font-size: 16px;
+    }
+    .letter h2 {
+      margin: 0 0 14px; font-size: 22px; font-weight: 700;
+    }
+    .letter p { margin: 0 0 14px; color: #d9dceb; }
+    .letter hr {
+      border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 18px 0;
+    }
+    .signature { margin-top: 10px; color: var(--muted); }
+    .images { display: grid; grid-template-columns: 1fr; gap: 12px; }
+    @media (min-width: 640px) {
+      .images { grid-template-columns: 1fr 1fr; }
+    }
+    figure {
+      margin: 0; padding: 0; border-radius: 14px; overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: #0c101f;
+    }
+    figure img { display: block; width: 100%; height: auto; }
+    figcaption {
+      font-size: 12px; padding: 8px 10px; color: var(--muted);
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .playlist {
+      margin-top: 16px; display: grid; gap: 12px;
+    }
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 12px; border-radius: 999px; background: rgba(124,156,255,0.12);
+      border: 1px solid rgba(124,156,255,0.28);
+      color: var(--text);
+    }
+    .footer {
+      margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center;
+    }
+    .ring {
+      position: relative;
+    }
+    .ring::after {
+      content: ""; position: absolute; inset: -6px; border-radius: 18px;
+      box-shadow: 0 0 0 6px var(--ring);
+      opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
+    }
+    .ring:hover::after { opacity: 1; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="title">For you, from me</div>
+        <div class="sub">A small promise, a plan, and a reminder of what we’re building together.</div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card ring">
+        <div class="letter" aria-labelledby="letter-title">
+          <h2 id="letter-title">My letter to you</h2>
+          <p>Hi love,</p>
+          <p>You mean more to me than I’ve been showing, and I’m not OK with the gap between my intentions and my actions. I want you to feel secure, valued, and prioritized and not just in words, but in the way I show up for you.</p>
+          <p>I’m serious about improving and changing my behaviors. I’m owning where I’ve fallen short, and I’m setting concrete steps so you don’t have to carry the weight of hoping I’ll change and you’ll see it.</p>
+          <hr />
+          <p><strong>My commitments:</strong></p>
+          <p>• I won’t list the bare minimum because you deserve more than that.<br />
+             • I’m committed to making you feel reassured in our dynamic, so you feel secure and don’t have to overthink whether I’m like those Reddit stories.<br />
+             • I’ll work to make you feel genuinely happy and satisfied, not just occasionally, but consistently.<br />
+             • I’ll show you through actions that I’m serious about us, and that you’re safe loving me.</p>
+          <p>You are important to me. I choose us. I’m doing the work starting now because you deserve consistency, care, and peace.</p>
+          <p class="signature">— Fifi</p>
+
+          <div class="playlist">
+            <a class="pill" href="https://open.spotify.com/playlist/1vxNhqYP5JBJzf4NQxKm84?si=5b463d1b56a74679" target="_blank" rel="noopener noreferrer" aria-label="Open our playlist on Spotify">
+              🎵 Open our playlist
+            </a>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1vxNhqYP5JBJzf4NQxKm84?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify playlist"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="card ring" aria-labelledby="memories-title">
+        <div class="letter">
+          <h2 id="memories-title">Our little gallery</h2>
+          <div class="images">
+            <figure>
+              <img src="kvGYigtKmZN5AGZRmfpN2.png" alt="Two Transformice avatars..." />
+              <img src="GKhwHviPmHB4z5S6wueke.png" alt="Animated duck, rabbit, and otter..." />
+              <img src="gzv2k5b4pXyJDCWkqRnFm.jpeg" alt="Stardew Valley night beach scene..." />
+              <figcaption>Us — colorful, silly, and definitely a team.</figcaption>
+            </figure>
+            <figure>
+              <img src="GKhw
